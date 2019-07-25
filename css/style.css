@@ -1,0 +1,117 @@
+body{
+  background-image: url("../img/bg_test2.jpg");
+  background-attachment:fixed;
+}
+
+h1{
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+}
+
+h5{
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+}
+
+h6{
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+}
+
+#topo{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  background-image: url("../img/bg_test2.jpg");
+}
+
+#links{
+  /* background-color: red; */
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#links a{
+  margin-right: 5px;
+  margin-left: 5px;
+  color: black;
+}
+#links a:hover{
+  margin-right: 5px;
+  margin-left: 5px;
+    color: #ffdd99;
+}
+
+#portfolio_links{
+  margin-top: 30px;
+  text-align: center;
+}
+#portfolio_links a{
+  color: black;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+#portfolio_links a:hover{
+  text-decoration: none;
+  color: #ffdd99;
+}
+
+.conteudo{
+  padding-top: 40px;
+  margin-top: 200px;
+}
+.conteudo .row{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.conteudo img{
+  width: 100%;
+}
+
+.overlay_container{
+  position: relative;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(255, 221, 153, 0.9);
+}
+.overlay:hover{
+  opacity: 1;
+}
+.overlay_text{
+  font-size: 20px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay_container a{
+  color: black;
+}
+
+.seta{
+  margin-left: 30px;
+  margin-bottom: 10px;
+  color: black;
+}
+.seta:hover{
+  color: #ffdd99;
+}
+.tamanho_video{
+  max-width: 700px;
+  margin-top: -30px;
+  margin-left: auto;
+  margin-right: auto;
+}
