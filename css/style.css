@@ -1,5 +1,5 @@
 body{
-  background-image: url('https://github.com/pedroandremartins/Portfolio/blob/master/img/bg_test2.JPG');
+  background-image: url("https://github.com/pedroandremartins/Portfolio/blob/master/img/bg_test2.JPG");
   background-attachment:fixed;
 }
 
@@ -22,7 +22,7 @@ h6{
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
-  background-image: url('../img/bg_test2.JPG');
+  background-image: url("https://github.com/pedroandremartins/Portfolio/blob/master/img/bg_test2.JPG");
 }
 
 #links{
