@@ -112,8 +112,11 @@ a{
 }
 
 .seta{
-  margin-left: 30px;
-  margin-bottom: 10px;
+  position: relative;
+  top: 60px;
+  left: 20px;
+  /* margin-left: 30px;
+  margin-bottom: 10px; */
   color: black;
 }
 .seta:hover{
@@ -138,6 +141,68 @@ a{
   max-width: 200px;
 }
 /* ============================================== */
+
+@media(max-width: 415px){
+
+  h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .conteudo .row{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  #portfolio_links a{
+    width: 100%;
+  }
+
+  #portfolio_links{
+    display: none;
+  }
+  #portfolio_links_mobile{
+    display: none;
+    height: 800px;
+  }
+  #portfolio_links_mobile a:hover{
+    text-decoration: none;
+    color: #ffdd99;
+  }
+  .menu_drop{
+    padding: 50px 0;
+    border-bottom: solid;
+    border-width: 1px;
+    font-size: 30px;
+  }
+  #hamburger{
+    position: absolute;
+    top: 60px;
+    right: 30px;
+  }
+  #toggle{
+    display: none;
+  }
+  #toggle:checked + #portfolio_links_mobile{
+    display: block;
+  }
+
+
+  #foto_perfil{
+    text-align: center;
+  }
+  #links{
+    text-align: center;
+  }
+  #zaask{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+  }
+
+  #aboutme{
+    padding: 0 20px;
+  }
+}
 @media(max-width: 767px){
   .conteudo .row{
     margin-top: 0px;
@@ -166,7 +231,7 @@ a{
   }
   #hamburger{
     position: absolute;
-    top: 50px;
+    top: 60px;
     right: 30px;
   }
   #toggle{
