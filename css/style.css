@@ -18,11 +18,22 @@ h6{
   font-weight: bold;
 }
 
+a{
+  color: black;
+}
+
 #topo{
   padding-top: 50px;
   padding-bottom: 20px;
   text-align: center;
   background-image: url("../img/bg_test2.JPG");
+}
+
+#menu_toggle{
+  position:absolute;
+  top: 60px;
+  left: auto;
+  right: 30px;
 }
 
 #links{
@@ -33,12 +44,11 @@ h6{
   margin-right: 5px;
   margin-left: 5px;
   color: black;
-  max-
 }
 #links a:hover{
   margin-right: 5px;
   margin-left: 5px;
-    color: #ffdd99;
+  color: #ffdd99;
 }
 
 #portfolio_links{
@@ -69,6 +79,7 @@ h6{
 
 .overlay_container{
   position: relative;
+  margin-bottom: 20px;
 }
 .overlay{
   position: absolute;
@@ -115,16 +126,132 @@ h6{
   margin-right: auto;
 }
 
+#aboutme{
+  max-width: 700px;
+}
+
+#foto_perfil{
+  text-align: right;
+}
+
 #zaask{
   max-width: 200px;
 }
+/* ============================================== */
+@media(max-width: 767px){
+  .conteudo .row{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  #portfolio_links a{
+    width: 100%;
+  }
 
-// Small devices (landscape phones, 576px and up)
-@media (max-width: 992px){
+  #portfolio_links{
+    display: none;
+  }
+  #portfolio_links_mobile{
+    display: none;
+    height: 800px;
+  }
+  #portfolio_links_mobile a:hover{
+    text-decoration: none;
+    color: #ffdd99;
+  }
+  .menu_drop{
+    padding: 50px 0;
+    border-bottom: solid;
+    border-width: 1px;
+    font-size: 30px;
+  }
+  #hamburger{
+    position: absolute;
+    top: 50px;
+    right: 30px;
+  }
+  #toggle{
+    display: none;
+  }
+  #toggle:checked + #portfolio_links_mobile{
+    display: block;
+  }
 
+
+  #foto_perfil{
+    text-align: center;
+  }
+  #links{
+    text-align: center;
+  }
+  #zaask{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+  }
+
+  #aboutme{
+    padding: 0 20px;
+  }
 }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@media(min-width: 768px){
+  #hamburger{
+    display: none;
+  }
+  #toggle{
+    display: none;
+  }
+  #portfolio_links_mobile{
+    display: none;
+  }
+  .conteudo{
+    margin-top: 140px;
+  }
+  .conteudo .row{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 
+
+  #foto_perfil{
+    text-align: center;
+  }
+  #links{
+    text-align: center;
+  }
+  #zaask{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+  }
+  #aboutme{
+    padding: 0 20px;
+  }
+}
+
+@media(min-width: 992px){
+  .conteudo .row{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .conteudo{
+    margin-top: 120px;
+  }
+
+  #links{
+    text-align: left;
+  }
+
+  #zaask{
+    text-align: left;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  #foto_perfil{
+    text-align: right;
+  }
+  #aboutme{
+    padding: 0;
+  }
 }
