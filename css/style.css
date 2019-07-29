@@ -124,7 +124,7 @@ a{
 }
 .tamanho_video{
   max-width: 700px;
-  margin-top: -30px;
+  margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
 }
