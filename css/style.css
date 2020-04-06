@@ -1,6 +1,8 @@
 body{
   background-image: url("../img/bg_test2.JPG");
   background-attachment:fixed;
+  overflow-x: hidden;
+
 }
 
 h1{
@@ -22,15 +24,36 @@ a{
   color: black;
 }
 
+#myVideo{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+
+}
+
+#topo_index{
+  margin-top: 700px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-image: url("../img/bg_test2.JPG");
+  background-attachment: fixed;
+}
+
 #topo{
   padding-top: 50px;
   padding-bottom: 20px;
   text-align: center;
   background-image: url("../img/bg_test2.JPG");
+  background-attachment: fixed;
 }
-
 #menu_toggle{
-  position:absolute;
+  position: fixed;
   top: 60px;
   left: auto;
   right: 30px;
@@ -67,7 +90,7 @@ a{
 
 .conteudo{
   padding-top: 40px;
-  margin-top: 120px;
+
 }
 .conteudo .row{
   margin-top: 30px;
